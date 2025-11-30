@@ -1,0 +1,187 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, #f7f5f5, #1a1a1a);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
+
+header nav a{
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    color: #cccccc;
+}
+
+.logo img{
+    height: 60px;
+}
+
+/* HERO */
+.hero{
+    height: 100vh;
+    background: url('./images/photo1.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero .title{
+    font-size: 72px;
+    font-weight: 800;
+    z-index: 2;
+}
+
+.subtitle{
+    font-size: 20px;
+    margin-top: 12px;
+    color: #bbbbbb;
+    z-index: 2;
+}
+
+/* BUTTONS */
+.buttons{
+    margin-top: 30px;
+    z-index: 2;
+}
+
+.btn{
+    padding: 12px 32px;
+    background: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #dcdcdc;
+}
+
+.btn-outline{
+    padding: 12px 32px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-outline:hover{
+    background: white;
+    color: black;
+}
+
+/* SECTION */
+.section{
+    padding: 100px 80px;
+}
+
+.section-title{
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* GALLERY */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img{
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery img:hover{
+    transform: scale(1.03);
+}
+
+/* ABOUT */
+.about{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-img img{
+    width: 450px;
+    border-radius: 14px;
+}
+
+.about-text p{
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+/* PRICING */
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.card{
+    background: #111;
+    padding: 30px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.price{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact{
+    text-align: center;
+}
+
+.email{
+    margin-top: 15px;
+    color: #bbbbbb;
+}
